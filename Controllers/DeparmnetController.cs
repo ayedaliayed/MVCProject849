@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using MVCProject849.ActionFilters;
 using MVCProject849.Models;
 using MVCProject849.Services;
 
 namespace MVCProject849.Controllers
 {
+
+    [ServiceFilter(typeof(ExecutionTimeFilter))]
     public class DeparmnetController : Controller
     {
         //  private readonly DeparmentService _deparmentService;
@@ -26,13 +30,20 @@ namespace MVCProject849.Controllers
 
         }
 
+
+        // logic
+
+        //[ServiceFilter(typeof(MyActionFilter))]
+      
+
         public IActionResult getbyid(int id)
         {
-
             var deparment = deparmentService.GetDepartmentById(id);
 
             return View("Details", deparment);
         }
+
+        //logic 
 
         // step 1
         public IActionResult Add()

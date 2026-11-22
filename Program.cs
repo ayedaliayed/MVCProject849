@@ -1,4 +1,5 @@
 using MiddlewareMVC.Middleware;
+using MVCProject849.ActionFilters;
 
 namespace MVCProject849
 {
@@ -10,6 +11,8 @@ namespace MVCProject849
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<MyActionFilter>();
+            builder.Services.AddScoped<ExecutionTimeFilter>();
 
             var app = builder.Build();
 
