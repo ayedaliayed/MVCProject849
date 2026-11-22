@@ -6,9 +6,9 @@ namespace MVCProject849.Controllers
 {
     public class DeparmnetController : Controller
     {
-        // contxe
-        //database
-        // 000     
+        //  private readonly DeparmentService _deparmentService;
+        //  
+        //  public DeparmnetController(DeparmentService deparmentService)
         DeparmentService deparmentService = new DeparmentService();
 
         public IActionResult Index()
