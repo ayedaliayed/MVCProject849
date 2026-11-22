@@ -1,3 +1,5 @@
+using MiddlewareMVC.Middleware;
+
 namespace MVCProject849
 {
     public class Program
@@ -19,6 +21,7 @@ namespace MVCProject849
             app.UseRouting();
 
             app.UseAuthorization();
+            //app.UseMiddleware<MyMiddleware>();
 
             app.MapStaticAssets();
             app.MapControllerRoute(
