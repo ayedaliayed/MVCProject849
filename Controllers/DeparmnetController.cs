@@ -8,7 +8,7 @@ namespace MVCProject849.Controllers
     {
         // contxe
         //database
-        // 000
+        // 000     
         DeparmentService deparmentService = new DeparmentService();
 
         public IActionResult Index()
