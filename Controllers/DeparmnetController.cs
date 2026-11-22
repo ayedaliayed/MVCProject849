@@ -9,6 +9,7 @@ namespace MVCProject849.Controllers
         //  private readonly DeparmentService _deparmentService;
         //  
         //  public DeparmnetController(DeparmentService deparmentService)
+            
         DeparmentService deparmentService = new DeparmentService();
 
         public IActionResult Index()
