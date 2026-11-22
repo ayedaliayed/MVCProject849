@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div style="background-color: blue; padding: 20px;">
+        <h1>Welcome to MVCProject849 Header</h1>
+    </div>
+
+    <div>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        @RenderBody()
+    </div>
+
+
+    <div style="background-color: aqua; padding: 20px; margin-top: 20px;">
+        <p>&copy; 2026 - MVCProject849 Footer</p>
+</body>
+</html>

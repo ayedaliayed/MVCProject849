@@ -1,0 +1,19 @@
+﻿@using MVCProject849.Model_Views
+@model EmpDetials;
+
+<h2>@Model.Id</h2>
+<h2>@Model.Name</h2>
+<h2>@Model.Address</h2>
+@* <h3>@Model.Phone</h3> *@
+<img src="~/Imges/@Model.Image" asp-append-version="true" />
+<h3>Depramnet : @Model.DepartmentName</h3>
+<h3>Depramnet : @Model.DepartmentCode</h3>
+<h4>Slaray :   @Model.Slaray </h4>
+<h4>Nekname : @Model.Neckname</h4>
+
+@foreach (var ph in @Model.Phone)
+{
+    <h4>@ph</h4>
+    
+}
+

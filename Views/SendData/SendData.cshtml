@@ -1,0 +1,96 @@
+﻿@using MVCProject849.Model_Views
+@model senddata
+
+<h2>Send Data</h2>
+<form asp-controller="SendData" asp-action="ReceiveData" method="post">
+
+    <div class="form-group">
+
+        <label asp-for="name">Name:</label> 
+        <input type="text" class="form-control" asp-for="name">
+        
+
+
+        @* @Html.TextBox("name") *@
+        @* @Html.TextBox("nameeeeee", null, new { @class = "form-control" }) *@
+
+        @* @Html.LabelFor(m => m.name)
+         @Html.TextAreaFor(m => m.name, new { @class = "form-control" }) 
+        @Html.EditorFor(m=>m.name) *@
+
+
+        @* @Html.RadioButton("x");
+        @Html.CheckBox("x");
+        @Html.DropDownList("x");
+        @Html.Password("name"); *@
+
+        @* @ViewData["name"]; *@
+
+        @* ViewData *@
+        @* @ViewBag *@
+
+    </div>
+    <div class="form-group">
+         <label asp-for="email">Email:</label> 
+         <input type="email" class="form-control" id="email" asp-for="email"> 
+
+
+        @* @Html.TextBox("email",null, new { @class = "form-control" }) *@
+      @*   @Html.LabelFor(m => m.email)
+        @Html.TextBoxFor(m => m.email, new { @class = "form-control" }) *@
+
+
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="age">Age:</label> 
+        <input type="text" class="form-control" id="age" asp-for="age"> 
+        @* @Html.TextBox("age", null, new { @class = "form-control" }) 
+
+        @* @Html.LabelFor(m => m.age) *@
+        @* @Html.TextBoxFor(m => m.age, new { @class = "form-control" }) *@
+        @* @Html.EditorFor(m => m.age, new { @class = "form-control" }) *@
+
+    </div>
+
+    <div class="form-group">
+         <label asp-for="address">Address:</label> 
+         <input type="text" class="form-control" id="email" asp-for="address">
+        @* @Html.TextBox("address", null, new { @class = "form-control" }) *@
+
+        @* @Html.LabelFor(m => m.address)
+        @Html.TextBoxFor(m => m.address, new { @class = "form-control" }) *@
+
+
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="phone">phone:</label> 
+       
+        <input type="text" class="form-control" id="phone" asp-for="phone">
+        @* @Html.TextBox("phone", null, new { @class = "form-control" })
+        @Html.LabelFor(m => m.phone)
+        @Html.TextBoxFor(m => m.phone, new { @class = "form-control" }) *@
+      
+
+    </div>
+
+    <div class="form-group">
+         <label asp-for="code">code:</label> 
+         <input type="text" class="form-control" id="code" asp-for="code"> 
+
+        @* @Html.TextBox("code", null, new { @class = "form-control" }) *@
+
+         @* @Html.LabelFor(m => m.code) *@
+         @* @Html.EditorFor(m => m.code, new { @class = "form-control" }) *@
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Send Data</button>
+
+
+
+</form>

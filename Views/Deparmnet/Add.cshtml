@@ -1,0 +1,28 @@
+﻿@model MVCProject849.Models.Department
+@* step 2 *@
+<h2>Add Department</h2>
+<form asp-controller="Deparmnet" asp-action="Create" method="post">
+
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="MangerName" class="control-label"></label>
+        <input asp-for="MangerName" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Code" class="control-label"></label>
+        <input asp-for="Code" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+
+</form>
+
+
+<h3>@ViewBag.Error</h3>
